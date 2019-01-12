@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">JaguarGoods</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">ABBYY Cloud OCR SDK Demo App</string>
+    <string name="fromCamera">From Camera</string>
+    <string name="fromFile">From File</string>
+    <string name="title_activity_results">상품 상세 정보</string>
+    <string name="hello">hello</string>
+    <color name="bgcolor">#000000</color>
+</resources>

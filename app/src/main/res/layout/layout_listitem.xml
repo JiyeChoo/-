@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgcolor"
+    android:paddingTop="20dp">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/product_img"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/txt_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/godic"
+        android:text="상품명"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/product_img"
+        app:layout_constraintStart_toStartOf="@+id/txt_product_seller"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_product_name"
+        android:layout_alignLeft="@+id/txt_product_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/godic"
+        android:text="가격"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/product_img"
+        app:layout_constraintTop_toBottomOf="@+id/txt_product_seller" />
+
+    <TextView
+        android:id="@+id/txt_product_seller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_product_price"
+        android:layout_alignLeft="@+id/txt_product_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/godic"
+        android:text="판매자"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/product_img"
+        app:layout_constraintTop_toBottomOf="@+id/txt_product_name" />
+
+</android.support.constraint.ConstraintLayout>

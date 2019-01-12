@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bgcolor"
+    tools:context=".search.SearchActivity">
+
+    <EditText
+        android:id="@+id/main_keyword_edt"
+        android:layout_width="294dp"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/main_search_btn"
+        android:fontFamily="@font/dotum"
+        android:hint="검색어를 입력하세요"
+        android:textColor="@color/colorAccent"
+        android:paddingLeft="10dp"/>
+
+
+    <Button
+        android:id="@+id/main_search_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:background="@color/colorPrimary"
+        android:text="검   색"
+        android:fontFamily="@font/dotum"
+        android:textSize="24dp"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toEndOf="@+id/main_keyword_edt"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <!--button background color는 나중에 수정하고 싶음!
+    android:background="@drawable/button_custom-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerv_view"
+        android:layout_width="387dp"
+        android:layout_height="468dp"
+        android:layout_below="@+id/main_search_btn"
+        app:layout_constraintTop_toBottomOf="@+id/main_keyword_edt"
+        tools:layout_editor_absoluteX="0dp">
+    </android.support.v7.widget.RecyclerView>
+</RelativeLayout>
